@@ -1,0 +1,19 @@
+{%  include "collective_action/Login.html" %}
+{% load otree static %}
+
+{% block title %}Halaman Masuk{% endblock %}
+{% block content %}
+    <p>Silahkan masukan nama pengguna dan kata sandi anda</p>
+    <form action="" method="POST">
+        <label>Nama pengguna</label>
+		<br/>
+		<input type="text" name="username" id="username"></input>
+        <br/>
+		<label>Kata sandi</label>
+		<br/>
+        <input type="text" name="password" id="password"></input>
+    </form>
+        <br>
+		<br>
+    <button type="submit">Selanjutnya</button>
+{% endblock %}
